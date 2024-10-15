@@ -1,0 +1,106 @@
+
+/* Container for the image and title */
+/* Container for the image and title */
+.image-container {
+    position: relative; /* Positioning for child elements */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow for the blur effect */
+    margin: 10px auto;
+}
+
+/* Image styling */
+.image-container img {
+    width: 100%; /* Take full width */
+    height: 100%; /* Take full height */
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    display: block; /* Block-level element */
+    transition: filter 0.5s ease; /* Smooth transition for blur effect */
+}
+
+/* Title styling */
+/* Container for the image and title */
+.image-container {
+    position: relative; /* Positioning for child elements */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow for the blur effect */
+}
+
+/* Image styling */
+.image-container img {
+    width: 100%; /* Take full width */
+    height: 100%; /* Take full height */
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    display: block; /* Block-level element */
+    transition: filter 0.5s ease; /* Smooth transition for blur effect */
+}
+
+/* Title styling */
+.image-container h1, .image-container h2 {
+    position: absolute; /* Position on top of the image */
+    color: white; /* Title color */
+    font-family: "Playfair Display", serif; /* Font family */
+    font-size: 15em; /* Font size */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Smooth transition for fade-in effect */
+    font-weight: 400;
+}
+
+/* Center h1 */
+.image-container h1 {
+    top: 50%; /* Center vertically */
+    left: 27%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+}
+
+/* Position h2 */
+.image-container h2 {
+    top: 0%; /* Adjusted to place it below h1 */
+    left: 70%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+}
+
+/* Hover effect */
+.image-container:hover img {
+    filter: blur(5px); /* Apply blur effect on hover */
+}
+
+.image-container:hover h1,
+.image-container:hover h2, .image-container:hover p,.image-container:hover .custom-text {
+    opacity: 1; /* Show the titles on hover */
+}
+
+p, .custom-text {
+    position: absolute; /* Position on top of the image */
+    color: rgb(255, 255, 255); /* Text color */
+    font-family: "Playfair Display", serif; /* Font family */
+    font-size: 20px; /* Font size */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Smooth transition for fade-in effect */
+    font-weight: 400;
+    width: 70%; /* Set a specific width for the text box */
+    max-width: 600px; /* Optional: set a maximum width */
+    text-align: left; /* Center text inside the box */
+    left: 28%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+}
+.custom-text {
+    top: 70%; /* Center vertically */
+    left: 75%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    /* Additional styles can be added here if needed */
+}
+/* 
+p:hover {
+    opacity: 1; 
+}
+
+
+p {
+    top: 30%; 
+} */
